@@ -1,0 +1,4 @@
+#Sat Jul 31 11:26:25 IST 2021
+base.0=/home/abin/AndroidStudioProjects/classroom/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
