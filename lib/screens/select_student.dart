@@ -38,16 +38,13 @@ class _SelectStudentState extends State<SelectStudent> {
                             var studentsData = snapshot.data!.students![index];
                             return GestureDetector(
                               onTap: () async {
-                                setState(() {
-                                  isLoading = true;
-                                });
-
                                 //oneMethodSHouldBeRemoved////iwasconfusedofApiDocumentationCleearitANDgoOn
-                                await API_MANAGER().assignStudentToClass(
-                                    studentsData.id!, widget.classRoomId);
                                 await API_MANAGER().assignStudenToClassRoom(
                                     studentsData.id!, widget.classRoomId);
                                 Navigator.of(context).pop();
+                                setState(() {
+                                  isLoading = false;
+                                });
                               },
                               child: Card(
                                 child: Container(

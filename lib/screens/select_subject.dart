@@ -38,8 +38,8 @@ class _SelectSubjectState extends State<SelectSubject> {
                           print("gesture tapped");
                           API_MANAGER().assignSubject(
                               subjectData.id!, widget.classROomId);
-                          API_MANAGER()
-                              .getClassRoominDetail(widget.classROomId);
+                          // API_MANAGER()
+                          //     .getClassRoominDetail(widget.classROomId);
                           Navigator.of(context).pop();
                         },
                         child: Card(

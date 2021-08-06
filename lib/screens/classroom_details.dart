@@ -15,10 +15,9 @@ class ClassRoomDetails extends StatefulWidget {
 
 class _ClassRoomDetailsState extends State<ClassRoomDetails> {
   String confernce = "conference";
-  Future<ClassRoomInduvidualModel>? _classsroom;
+
   @override
   void initState() {
-    _classsroom = API_MANAGER().getClassRoominDetail(widget.classRoomId);
     super.initState();
   }
 
@@ -66,16 +65,6 @@ class _ClassRoomDetailsState extends State<ClassRoomDetails> {
             },
             child: Icon(Icons.subject),
           ),
-          // FloatingActionButton(
-          //   heroTag: "btn3",
-          //   onPressed: () {
-          //     setState(() {
-          //       _classsroom =
-          //           API_MANAGER().getClassRoominDetail(widget.classRoomId);
-          //     });
-          //   },
-          //   child: Icon(Icons.refresh),
-          // ),
         ],
       ),
     );

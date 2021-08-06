@@ -51,7 +51,7 @@ class API_MANAGER {
 
   Future<void> assignSubject(int subjectId, classRoomId) async {
     var client = http.Client();
-    print('object');
+    print('assign subject method');
     final json = {"subject": subjectId.toString()};
     final respose = await client.patch(
         Uri.parse('${base_api}classrooms/$classRoomId$api_key'),
